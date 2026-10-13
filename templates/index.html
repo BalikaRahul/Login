@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <h2>SignUP</h2>
+      <form action="/index.html" class="main" method="post">
+        <label for="firstname">Enter your first name</label>
+        <input
+          id="firstname"
+          type="text"
+          class="inputdata"
+          name="first_name"
+          placeholder="Enter your first name"
+          required
+        />
+
+        <label for="lastname">Enter your last name</label>
+        <input
+          id="lastname"
+          type="text"
+          class="inputdata"
+          name="last_name"
+          placeholder="Enter your last name"
+          required
+        />
+
+        <label for="phonenumber">Enter your phone number</label>
+        <input
+          id="phonenumber"
+          type="tel"
+          class="inputdata"
+          name="phone_number"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="email">Enter your email</label>
+        <input
+          id="email"
+          type="email"
+          class="inputdata"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="gender"> enter your gender</label>
+        <select id="gender" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="others">others</option>
+        </select>
+
+        <label for="city">Enter your city</label>
+        <input
+          id="city"
+          type="text"
+          class="inputdata"
+          name="city"
+          placeholder="Enter your city"
+          required
+        />
+
+        <button class="register" type="submit">Register</button>
+        <button class="register" type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
